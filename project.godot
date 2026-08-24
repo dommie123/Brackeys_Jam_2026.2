@@ -11,13 +11,23 @@ config_version=5
 [application]
 
 config/name="Card Shop Jam"
+run/main_scene="uid://mhr2ig1ryjtg"
 config/features=PackedStringArray("4.7", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://Assets/icon.svg"
 
 [display]
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+
+[file_customization]
+
+folder_colors={
+"res://Assets/": "green",
+"res://Cards/": "purple",
+"res://Scenes/": "red",
+"res://Scripts/": "blue"
+}
 
 [physics]
 

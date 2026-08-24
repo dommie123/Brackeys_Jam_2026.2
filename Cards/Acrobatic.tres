@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Card" format=3 uid="uid://cowf3ux41u8ks"]
+
+[ext_resource type="Texture2D" uid="uid://kib8le4tqivd" path="res://Assets/image.png" id="1_ftr73"]
+[ext_resource type="Script" uid="uid://bwn8vl0q3wg6q" path="res://Cards/card_resource.gd" id="2_dfnsk"]
+
+[resource]
+script = ExtResource("2_dfnsk")
+name = "Acrobatic"
+rarity = 1
+shiny = true
+market_value = 200
+image = ExtResource("1_ftr73")
+metadata/_custom_type_script = "uid://bwn8vl0q3wg6q"

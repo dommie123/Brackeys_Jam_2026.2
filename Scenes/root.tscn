@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://mhr2ig1ryjtg"]
+
+[ext_resource type="Script" uid="uid://bwn8vl0q3wg6q" path="res://Cards/card_resource.gd" id="1_i04dx"]
+[ext_resource type="Texture2D" uid="uid://kib8le4tqivd" path="res://Assets/image.png" id="2_8pvmw"]
+[ext_resource type="Texture2D" uid="uid://b4kxb784gtyat" path="res://Assets/icon.svg" id="3_vnucn"]
+
+[node name="Root" type="Control" unique_id=442013249]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Game" type="Control" parent="." unique_id=614876374]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Acrobat" type="TextureRect" parent="Game" unique_id=192079823]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_i04dx")
+card_name = "Acrobat"
+rarity = 1
+shiny = true
+market_value = 200
+image = ExtResource("2_8pvmw")
+metadata/_custom_type_script = "uid://bwn8vl0q3wg6q"
+
+[node name="Leaf Cutter" type="TextureRect" parent="Game" unique_id=687647017]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+script = ExtResource("1_i04dx")
+card_name = "Leaf Cutter"
+rarity = 1
+image = ExtResource("3_vnucn")
+metadata/_custom_type_script = "uid://bwn8vl0q3wg6q"
