@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bbluu02g226f7"]
+
+[ext_resource type="Texture2D" uid="uid://bumtdcb7hgxem" path="res://assets/placeholder/graphics/average-guy-26023717.webp" id="1_8ge1q"]
+
+[node name="CharPortrait" type="Sprite2D" unique_id=1833068799]
+position = Vector2(304, 452)
+texture = ExtResource("1_8ge1q")
