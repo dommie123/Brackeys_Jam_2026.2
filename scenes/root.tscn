@@ -1,14 +1,21 @@
 [gd_scene format=3 uid="uid://mhr2ig1ryjtg"]
 
+[ext_resource type="PackedScene" uid="uid://bruh5e23q74tm" path="res://scenes/ui/game.tscn" id="1_j5px3"]
+
 [node name="Root" type="Control" unique_id=442013249]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_right = 1.217
+anchor_bottom = 1.2800001
+offset_right = -584.64014
+offset_bottom = -350.40015
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Game" type="Control" parent="." unique_id=614876374]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="Game" parent="." unique_id=1198504315 instance=ExtResource("1_j5px3")]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.100274
+anchor_bottom = 1.0620157
+offset_right = -7.6800537
+offset_bottom = -8.000122
+metadata/_edit_use_anchors_ = true

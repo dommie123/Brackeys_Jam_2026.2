@@ -1,5 +1,7 @@
-Button
+TextureRect
 TextureButton
+Button
+TextEdit
+Label
 Control
 Container
-TextureRect

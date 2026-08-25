@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://lpayhpc33s48"]
+
+[ext_resource type="Script" uid="uid://ousx30oaf2ai" path="res://scripts/search_bar.gd" id="1_fy7fs"]
+[ext_resource type="Texture2D" uid="uid://dpr4m0qka6dvg" path="res://assets/placeholder/graphics/search-icon-png-9985.png" id="2_ii4wv"]
+
+[node name="SearchBar" type="Control" unique_id=244558537]
+layout_mode = 3
+anchor_right = 0.43333334
+anchor_bottom = 0.05185185
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fy7fs")
+metadata/_edit_use_anchors_ = true
+
+[node name="SearchLabel" type="Label" parent="." unique_id=340335387]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 8.0
+offset_top = -16.0
+offset_right = 85.0
+offset_bottom = 12.0
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 20
+text = "Search: "
+
+[node name="SearchBox" type="TextEdit" parent="." unique_id=1506062274]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -96.0
+offset_top = -16.0
+offset_right = 128.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SearchButton" type="TextureButton" parent="." unique_id=18536741]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -16.0
+offset_right = -8.0
+offset_bottom = 16.0
+grow_horizontal = 0
+grow_vertical = 2
+texture_normal = ExtResource("2_ii4wv")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="SearchButton" to="." method="_on_search_button_pressed"]

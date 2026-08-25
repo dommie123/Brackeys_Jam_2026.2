@@ -1,18 +1,18 @@
 [gd_scene format=3 uid="uid://dsj2lvwg1unlt"]
 
 [ext_resource type="Texture2D" uid="uid://i5kq3tqln7hh" path="res://assets/placeholder/graphics/computer_screen.jpg" id="1_bgxek"]
-[ext_resource type="Script" uid="uid://cjowk1bnja3ah" path="res://scenes/ui/computer_screen.gd" id="1_quexs"]
+[ext_resource type="Script" uid="uid://cjowk1bnja3ah" path="res://scripts/computer_screen.gd" id="1_quexs"]
 [ext_resource type="PackedScene" uid="uid://daao30ll0apvw" path="res://scenes/ui/computer_icon.tscn" id="2_f4qsd"]
 [ext_resource type="Texture2D" uid="uid://dke1id8uq3di5" path="res://assets/placeholder/graphics/twitter-home.png" id="3_t2u65"]
 [ext_resource type="Texture2D" uid="uid://c4jb5vl727che" path="res://assets/placeholder/graphics/amazon_home.jpg" id="4_quexs"]
+[ext_resource type="PackedScene" uid="uid://lpayhpc33s48" path="res://scenes/ui/search_bar.tscn" id="5_id5i3"]
 [ext_resource type="Texture2D" uid="uid://cift37djth7hw" path="res://assets/placeholder/graphics/quokkadb_screen.jpg" id="5_rjx7k"]
 
 [node name="ComputerScreen" type="Control" unique_id=1020929072]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
+anchors_preset = 9
 anchor_bottom = 1.0
-grow_horizontal = 2
+offset_right = 1920.0
 grow_vertical = 2
 script = ExtResource("1_quexs")
 
@@ -32,42 +32,47 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_bgxek")
+expand_mode = 1
 
 [node name="TweeterIcon" parent="ComputerHomeScreen" unique_id=638101516 instance=ExtResource("2_f4qsd")]
 layout_mode = 0
 anchors_preset = 0
 anchor_right = 0.0
 anchor_bottom = 0.0
-offset_left = 184.0
-offset_top = 64.0
-offset_right = 328.0
-offset_bottom = 246.0
+offset_left = 128.0
+offset_top = 56.0
+offset_right = 208.0
+offset_bottom = 160.0
 grow_horizontal = 1
 grow_vertical = 1
 text = "Tweeter
 "
 
 [node name="AmazingOnIcon" parent="ComputerHomeScreen" unique_id=1198616821 instance=ExtResource("2_f4qsd")]
-layout_mode = 0
-anchors_preset = 0
-anchor_right = 0.0
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
 anchor_bottom = 0.0
-offset_left = 504.0
-offset_top = 64.0
-offset_right = 648.0
-offset_bottom = 246.0
-grow_horizontal = 1
+offset_left = -48.0
+offset_top = 56.0
+offset_right = 54.0
+offset_bottom = 160.0
 grow_vertical = 1
 text = "Amazing On
 "
 
 [node name="QuokkaDBIcon" parent="ComputerHomeScreen" unique_id=260123755 instance=ExtResource("2_f4qsd")]
 layout_mode = 1
-offset_left = 824.0
-offset_top = 64.0
-offset_right = 791.2
-offset_bottom = 58.079987
-grow_horizontal = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 0.0
+offset_left = -208.0
+offset_top = 56.0
+offset_right = -112.0
+offset_bottom = 160.0
+grow_horizontal = 0
 grow_vertical = 1
 text = "QuokkaDB
 "
@@ -86,19 +91,29 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -49.0
-offset_right = 49.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("3_t2u65")
+expand_mode = 1
+
+[node name="TweeterSearchBar" parent="TweeterScreen" unique_id=244558537 instance=ExtResource("5_id5i3")]
+layout_mode = 1
+anchor_left = 0.2
+anchor_top = 0.037037037
+anchor_right = 0.7331667
+anchor_bottom = 0.08148148
+offset_right = 0.3199463
+grow_vertical = 1
 
 [node name="CloseBtn" type="Button" parent="TweeterScreen" unique_id=185556581]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -40.0
-offset_bottom = 40.0
+offset_left = -43.0
+offset_top = 3.0
+offset_right = -3.0
+offset_bottom = 43.0
 grow_horizontal = 0
 theme_override_colors/font_color = Color(1, 0.6761417, 0.6387128, 1)
 theme_override_colors/font_outline_color = Color(0.5176471, 0, 0, 1)
@@ -121,14 +136,25 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("4_quexs")
+expand_mode = 1
 
-[node name="CloseBtn2" type="Button" parent="AmazingOnScreen" unique_id=228396784]
+[node name="AmazingOnSearchBar" parent="AmazingOnScreen" unique_id=2072865877 instance=ExtResource("5_id5i3")]
+layout_mode = 1
+anchor_left = 0.2
+anchor_top = 0.037037037
+anchor_right = 0.73333335
+anchor_bottom = 0.08148148
+grow_vertical = 1
+
+[node name="CloseBtn" type="Button" parent="AmazingOnScreen" unique_id=228396784]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -40.0
-offset_bottom = 40.0
+offset_left = -43.0
+offset_top = 3.0
+offset_right = -3.0
+offset_bottom = 43.0
 grow_horizontal = 0
 theme_override_colors/font_color = Color(1, 0.6761417, 0.6387128, 1)
 theme_override_colors/font_outline_color = Color(0.5176471, 0, 0, 1)
@@ -151,14 +177,27 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("5_rjx7k")
+expand_mode = 1
+
+[node name="QuokkaDBSearchBar" parent="QuokkaDBScreen" unique_id=1353665671 instance=ExtResource("5_id5i3")]
+layout_mode = 1
+anchor_left = 0.20016666
+anchor_top = 0.037037037
+anchor_right = 0.7331667
+anchor_bottom = 0.08148148
+offset_left = -0.3199768
+offset_right = 0.3199768
+grow_vertical = 1
 
 [node name="CloseBtn" type="Button" parent="QuokkaDBScreen" unique_id=453739680]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -40.0
-offset_bottom = 40.0
+offset_left = -43.0
+offset_top = 3.0
+offset_right = -3.0
+offset_bottom = 43.0
 grow_horizontal = 0
 theme_override_colors/font_color = Color(1, 0.6761417, 0.6387128, 1)
 theme_override_colors/font_outline_color = Color(0.5176471, 0, 0, 1)
@@ -167,6 +206,9 @@ text = "X"
 [connection signal="pressed" from="ComputerHomeScreen/TweeterIcon" to="." method="_on_tweeter_icon_pressed"]
 [connection signal="pressed" from="ComputerHomeScreen/AmazingOnIcon" to="." method="_on_amazing_on_icon_pressed"]
 [connection signal="pressed" from="ComputerHomeScreen/QuokkaDBIcon" to="." method="_on_quokka_db_icon_pressed"]
+[connection signal="search_conducted" from="TweeterScreen/TweeterSearchBar" to="." method="_on_tweeter_search_bar_search_conducted"]
 [connection signal="pressed" from="TweeterScreen/CloseBtn" to="." method="_on_close_btn_pressed"]
-[connection signal="pressed" from="AmazingOnScreen/CloseBtn2" to="." method="_on_close_btn_pressed"]
+[connection signal="search_conducted" from="AmazingOnScreen/AmazingOnSearchBar" to="." method="_on_amazing_on_search_bar_search_conducted"]
+[connection signal="pressed" from="AmazingOnScreen/CloseBtn" to="." method="_on_close_btn_pressed"]
+[connection signal="search_conducted" from="QuokkaDBScreen/QuokkaDBSearchBar" to="." method="_on_quokka_db_search_bar_search_conducted"]
 [connection signal="pressed" from="QuokkaDBScreen/CloseBtn" to="." method="_on_close_btn_pressed"]
