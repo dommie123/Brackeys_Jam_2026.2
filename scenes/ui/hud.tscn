@@ -1,9 +1,56 @@
 [gd_scene format=3 uid="uid://cjxqrh4qoucms"]
 
-[node name="HUD" type="Control" unique_id=1013442143]
+[ext_resource type="Script" uid="uid://cugrf1tk6t6x0" path="res://scripts/hud.gd" id="1_0mwgc"]
+
+[node name="HUD" type="Control" unique_id=43326899]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_0mwgc")
+
+[node name="SaleButton" type="Button" parent="." unique_id=1556800216]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 126.0
+offset_top = -184.0
+offset_right = 576.0
+offset_bottom = -56.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 36
+text = "Sale"
+
+[node name="InventoryButton" type="Button" parent="." unique_id=1266634378]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -576.0
+offset_top = -184.0
+offset_right = -128.0
+offset_bottom = -56.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 36
+text = "Inventory
+"
+
+[node name="ReputationLabel" type="Label" parent="." unique_id=499140684]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 8.0
+offset_bottom = 47.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 28
+text = "Rep: <count>"
+horizontal_alignment = 2
+
+[connection signal="pressed" from="SaleButton" to="." method="_on_sale_button_pressed"]
+[connection signal="pressed" from="InventoryButton" to="." method="_on_inventory_button_pressed"]

@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://bi5brgtf8vmtq" path="res://scripts/game.gd" id="1_kfd0b"]
 [ext_resource type="Texture2D" uid="uid://bvwqupox4laxk" path="res://assets/placeholder/graphics/—Pngtree—bar_732598.png" id="2_bfhks"]
 [ext_resource type="PackedScene" uid="uid://dsj2lvwg1unlt" path="res://scenes/ui/computer_screen.tscn" id="3_kfd0b"]
+[ext_resource type="PackedScene" uid="uid://cjxqrh4qoucms" path="res://scenes/ui/hud.tscn" id="5_lakwo"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lakwo"]
 load_path = "res://.godot/imported/—Pngtree—computer monitor picture free png_5444544.png-39549e545f4a28965dadf923d5305f78.ctex"
@@ -64,6 +65,9 @@ offset_left = 1144.0
 offset_top = 296.0
 offset_right = 1841.0
 offset_bottom = -406.0
+
+[node name="HUD" parent="." unique_id=43326899 instance=ExtResource("5_lakwo")]
+layout_mode = 1
 
 [connection signal="db_lookup" from="ComputerScreen" to="." method="_on_computer_screen_db_lookup"]
 [connection signal="tweeter_lookup" from="ComputerScreen" to="." method="_on_computer_screen_tweeter_lookup"]

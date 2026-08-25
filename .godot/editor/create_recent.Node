@@ -1,7 +1,8 @@
-TextureRect
-TextureButton
-Button
-TextEdit
 Label
 Control
+Button
+GridContainer
+TextureRect
+TextureButton
+TextEdit
 Container
