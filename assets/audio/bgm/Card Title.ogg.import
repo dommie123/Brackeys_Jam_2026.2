@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://oxa1r2qvv4px"
+path="res://.godot/imported/Card Title.ogg-2c93253b135ad55dc01ef214bd13b67a.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/bgm/Card Title.ogg"
+dest_files=["res://.godot/imported/Card Title.ogg-2c93253b135ad55dc01ef214bd13b67a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
