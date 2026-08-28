@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dsj2lvwg1unlt"]
 
 [ext_resource type="Texture2D" uid="uid://i5kq3tqln7hh" path="res://assets/placeholder/graphics/computer_screen.jpg" id="1_bgxek"]
-[ext_resource type="Script" uid="uid://cjowk1bnja3ah" path="res://scripts/computer_screen.gd" id="1_quexs"]
+[ext_resource type="Script" uid="uid://cjowk1bnja3ah" path="res://scripts/ui/computer_screen.gd" id="1_quexs"]
 [ext_resource type="PackedScene" uid="uid://daao30ll0apvw" path="res://scenes/ui/computer_icon.tscn" id="2_f4qsd"]
 [ext_resource type="Texture2D" uid="uid://dke1id8uq3di5" path="res://assets/placeholder/graphics/twitter-home.png" id="3_t2u65"]
 [ext_resource type="Texture2D" uid="uid://c4jb5vl727che" path="res://assets/placeholder/graphics/amazon_home.jpg" id="4_quexs"]

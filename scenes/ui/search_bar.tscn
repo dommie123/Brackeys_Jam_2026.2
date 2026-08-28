@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://lpayhpc33s48"]
 
-[ext_resource type="Script" uid="uid://ousx30oaf2ai" path="res://scripts/search_bar.gd" id="1_fy7fs"]
+[ext_resource type="Script" uid="uid://ousx30oaf2ai" path="res://scripts/ui/search_bar.gd" id="1_fy7fs"]
 [ext_resource type="Texture2D" uid="uid://dpr4m0qka6dvg" path="res://assets/placeholder/graphics/search-icon-png-9985.png" id="2_ii4wv"]
 
 [node name="SearchBar" type="Control" unique_id=244558537]

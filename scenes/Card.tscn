@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://u42c8b685kbt"]
 
-[ext_resource type="Script" uid="uid://kjmibsfqy4n0" path="res://scripts/ui_card.gd" id="1_tgmmg"]
+[ext_resource type="Script" uid="uid://kjmibsfqy4n0" path="res://scripts/ui/ui_card.gd" id="1_tgmmg"]
 [ext_resource type="Resource" uid="uid://prr0iohe7j7x" path="res://resources/Argentine.tres" id="2_tgmmg"]
 
 [node name="Card" type="Control" unique_id=1018352480]

@@ -4,8 +4,9 @@
 [ext_resource type="Script" uid="uid://bi5brgtf8vmtq" path="res://scripts/game.gd" id="1_kfd0b"]
 [ext_resource type="Texture2D" uid="uid://bvwqupox4laxk" path="res://assets/placeholder/graphics/—Pngtree—bar_732598.png" id="2_bfhks"]
 [ext_resource type="PackedScene" uid="uid://dsj2lvwg1unlt" path="res://scenes/ui/computer_screen.tscn" id="3_kfd0b"]
-[ext_resource type="PackedScene" uid="uid://bbluu02g226f7" path="res://scenes/char_portrait.tscn" id="3_p57ef"]
+[ext_resource type="PackedScene" uid="uid://bigpk3darsl8c" path="res://scenes/Customer.tscn" id="3_u5sy4"]
 [ext_resource type="PackedScene" uid="uid://cjxqrh4qoucms" path="res://scenes/ui/hud.tscn" id="5_lakwo"]
+[ext_resource type="Script" uid="uid://dd60ujp2qnkqe" path="res://scripts/player_behavior_object.gd" id="7_u5sy4"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lakwo"]
 load_path = "res://.godot/imported/—Pngtree—computer monitor picture free png_5444544.png-39549e545f4a28965dadf923d5305f78.ctex"
@@ -31,9 +32,7 @@ grow_vertical = 2
 texture = ExtResource("1_21b1b")
 expand_mode = 1
 
-[node name="CharPortrait" parent="." unique_id=1833068799 instance=ExtResource("3_p57ef")]
-position = Vector2(448, 692)
-scale = Vector2(0.75, 0.74222225)
+[node name="Customer" parent="." unique_id=1924783639 instance=ExtResource("3_u5sy4")]
 
 [node name="FrontDesk" type="TextureRect" parent="." unique_id=1925572736]
 layout_mode = 1
@@ -80,5 +79,12 @@ offset_top = 0.07998657
 offset_right = -81.0
 offset_bottom = 0.079956055
 
+[node name="PlayerBehaviorObject" type="Node" parent="." unique_id=1975304135]
+script = ExtResource("7_u5sy4")
+metadata/_custom_type_script = "uid://dd60ujp2qnkqe"
+
+[node name="IGT" type="Timer" parent="." unique_id=1278897978]
+
 [connection signal="db_lookup" from="ComputerScreen" to="." method="_on_computer_screen_db_lookup"]
 [connection signal="tweeter_lookup" from="ComputerScreen" to="." method="_on_computer_screen_tweeter_lookup"]
+[connection signal="timeout" from="IGT" to="." method="_on_igt_timeout"]

@@ -1,5 +1,5 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1787803646
+::res://::1787946402
 README.md::TextFile::-1::1787529565::0::1::::<><><>0<>0<><>::
 ::res://assets/::1787593077
 ::res://assets/art/::1787530040
@@ -7,7 +7,7 @@ README.md::TextFile::-1::1787529565::0::1::::<><><>0<>0<><>::
 card_back.png::CompressedTexture2D::5235160288804241447::1787763142::1787763600::1::::<><><>0<>0<>4d57f491857c018a4b54bae7de6a476a<>res://.godot/imported/card_back.png-a26948b042a19198c25ab96b0675c5b8.ctex::
 ::res://assets/art/ui/::1787530040
 ::res://assets/audio/::1787530020
-::res://assets/audio/bgm/::1787806245
+::res://assets/audio/bgm/::1787806246
 Card Shop Wip 6.ogg::AudioStreamOggVorbis::5998139080253006928::1787759492::1787759493::1::::<><><>0<>0<>d664e6a20042497a1ceccf8c94ef21b4<>res://.godot/imported/Card Shop Wip 6.ogg-95456de503c1b35a8e6c51a1c3f79ac1.oggvorbisstr::
 Card Title.ogg::AudioStreamOggVorbis::1030171865279916481::1787806245::1787806246::1::::<><><>0<>0<>6701f0b836693ce37bb18b30e659a764<>res://.godot/imported/Card Title.ogg-2c93253b135ad55dc01ef214bd13b67a.oggvorbisstr::
 ::res://assets/audio/sfx/::1787530020
@@ -26,24 +26,31 @@ shop_background.jpeg::CompressedTexture2D::1990264407591235209::1787618723::1787
 twitter-home.png::CompressedTexture2D::7871001136118823642::1787595402::1787595473::1::::<><><>0<>0<>b32a5040bba8db29e73c94d1de05fcf2<>res://.godot/imported/twitter-home.png-4bc03b87018e33fe857db259d753dff0.ctex::
 —Pngtree—bar_732598.png::CompressedTexture2D::3906810709005173152::1787619054::1787619083::1::::<><><>0<>0<>18d42f958ef8410231bec3874d3aad04<>res://.godot/imported/—Pngtree—bar_732598.png-82a03c0180ce4a39a24ba8a8c8861352.ctex::
 —Pngtree—computer monitor picture free png_5444544.png::CompressedTexture2D::4691704746688174589::1787619232::1787619273::1::::<><><>0<>0<>49530e00de77757ff59e31b0cc3c60da<>res://.godot/imported/—Pngtree—computer monitor picture free png_5444544.png-39549e545f4a28965dadf923d5305f78.ctex::
-::res://resources/::1787529999
-Argentine.tres::Resource/Card::1089004352252879771::1787529999::0::1::::<><><>0<>0<><>::uid://bwn8vl0q3wg6q::::res://scripts/card_resource.gd<>uid://kib8le4tqivd::::res://assets/images/image.png
-::res://scenes/::1787713342
-Card.tscn::PackedScene::1465288494290032637::1787618018::0::1::::<><><>0<>0<><>::uid://kjmibsfqy4n0::::res://scripts/ui_card.gd<>uid://prr0iohe7j7x::::res://resources/Argentine.tres
+::res://resources/::1787941245
+Argentine.tres::Resource/Card::1089004352252879771::1787941245::0::1::::<><><>0<>0<><>::uid://bwn8vl0q3wg6q::::res://scripts/resources/card_resource.gd<>uid://kib8le4tqivd::::res://assets/images/image.png
+::res://scenes/::1787943861
+Card.tscn::PackedScene::1465288494290032637::1787941269::0::1::::<><><>0<>0<><>::uid://kjmibsfqy4n0::::res://scripts/ui/ui_card.gd<>uid://prr0iohe7j7x::::res://resources/Argentine.tres
 char_portrait.tscn::PackedScene::2480569093462481870::1787713342::0::1::::<><><>0<>0<><>::uid://bumtdcb7hgxem::::res://assets/placeholder/graphics/average-guy-26023717.webp
-game.tscn::PackedScene::3621397426485344198::1787713342::0::1::::<><><>0<>0<><>::uid://3mdmm2eaudxp::::res://assets/placeholder/graphics/shop_background.jpeg<>uid://bi5brgtf8vmtq::::res://scripts/game.gd<>uid://bvwqupox4laxk::::res://assets/placeholder/graphics/—Pngtree—bar_732598.png<>uid://dsj2lvwg1unlt::::res://scenes/ui/computer_screen.tscn<>uid://bbluu02g226f7::::res://scenes/char_portrait.tscn<>uid://cjxqrh4qoucms::::res://scenes/ui/hud.tscn
+Customer.tscn::PackedScene::2961247787463921008::1787943861::0::1::::<><><>0<>0<><>::uid://bumtdcb7hgxem::::res://assets/placeholder/graphics/average-guy-26023717.webp<>uid://dw0wyafqdkn3::::res://scripts/customer_behavior.gd
+game.tscn::PackedScene::3621397426485344198::1787941632::0::1::::<><><>0<>0<><>::uid://3mdmm2eaudxp::::res://assets/placeholder/graphics/shop_background.jpeg<>uid://bi5brgtf8vmtq::::res://scripts/game.gd<>uid://bvwqupox4laxk::::res://assets/placeholder/graphics/—Pngtree—bar_732598.png<>uid://dsj2lvwg1unlt::::res://scenes/ui/computer_screen.tscn<>uid://bbluu02g226f7::::res://scenes/char_portrait.tscn<>uid://cjxqrh4qoucms::::res://scenes/ui/hud.tscn
 root.tscn::PackedScene::857797603907889856::1787713342::0::1::::<><><>0<>0<><>::uid://bruh5e23q74tm::::res://scenes/game.tscn
-::res://scenes/ui/::1787713342
+::res://scenes/ui/::1787941269
 computer_icon.tscn::PackedScene::7160163421817189068::1787619898::0::1::::<><><>0<>0<><>::
-computer_screen.tscn::PackedScene::8442900776172281405::1787623069::0::1::::<><><>0<>0<><>::uid://i5kq3tqln7hh::::res://assets/placeholder/graphics/computer_screen.jpg<>uid://cjowk1bnja3ah::::res://scripts/computer_screen.gd<>uid://daao30ll0apvw::::res://scenes/ui/computer_icon.tscn<>uid://dke1id8uq3di5::::res://assets/placeholder/graphics/twitter-home.png<>uid://c4jb5vl727che::::res://assets/placeholder/graphics/amazon_home.jpg<>uid://lpayhpc33s48::::res://scenes/ui/search_bar.tscn<>uid://cift37djth7hw::::res://assets/placeholder/graphics/quokkadb_screen.jpg
+computer_screen.tscn::PackedScene::8442900776172281405::1787941269::0::1::::<><><>0<>0<><>::uid://i5kq3tqln7hh::::res://assets/placeholder/graphics/computer_screen.jpg<>uid://cjowk1bnja3ah::::res://scripts/ui/computer_screen.gd<>uid://daao30ll0apvw::::res://scenes/ui/computer_icon.tscn<>uid://dke1id8uq3di5::::res://assets/placeholder/graphics/twitter-home.png<>uid://c4jb5vl727che::::res://assets/placeholder/graphics/amazon_home.jpg<>uid://lpayhpc33s48::::res://scenes/ui/search_bar.tscn<>uid://cift37djth7hw::::res://assets/placeholder/graphics/quokkadb_screen.jpg
 dialogue_box.tscn::PackedScene::1175848952271869548::1787713342::0::1::::<><><>0<>0<><>::
-hud.tscn::PackedScene::5453023892061758450::1787713342::0::1::::<><><>0<>0<><>::uid://cugrf1tk6t6x0::::res://scripts/hud.gd<>uid://q0ucb463dfoe::::res://scenes/ui/dialogue_box.tscn
-search_bar.tscn::PackedScene::803086196347898211::1787622657::0::1::::<><><>0<>0<><>::uid://ousx30oaf2ai::::res://scripts/search_bar.gd<>uid://dpr4m0qka6dvg::::res://assets/placeholder/graphics/search-icon-png-9985.png
-::res://scripts/::1787713342
-card_resource.gd::GDScript::3959453934108105590::1787617052::0::1::::Card<>Resource<><>0<>0<><>::
-computer_screen.gd::GDScript::5434797248219869671::1787614101::0::1::::<>Control<><>0<>0<><>::
-customer_resource.gd::GDScript::8845708143094147092::1787618018::0::1::::Customer<>Resource<><>0<>0<><>::
+hud.tscn::PackedScene::5453023892061758450::1787941269::0::1::::<><><>0<>0<><>::uid://cugrf1tk6t6x0::::res://scripts/ui/hud.gd<>uid://q0ucb463dfoe::::res://scenes/ui/dialogue_box.tscn
+search_bar.tscn::PackedScene::803086196347898211::1787941269::0::1::::<><><>0<>0<><>::uid://ousx30oaf2ai::::res://scripts/ui/search_bar.gd<>uid://dpr4m0qka6dvg::::res://assets/placeholder/graphics/search-icon-png-9985.png
+::res://scripts/::1787943861
+customer_behavior.gd::GDScript::257541314597573430::1787943861::0::1::::<>Node2D<><>0<>0<><>::
 game.gd::GDScript::3009954185671803998::1787623015::0::1::::<>Control<><>0<>0<><>::
+player_behavior_object.gd::GDScript::7435378430197391316::1787943861::0::1::::PlayerBehaviorObject<>Node<><>0<>0<><>::
+::res://scripts/enums/::1787943720
+::res://scripts/resources/::1787943861
+card_resource.gd::GDScript::3959453934108105590::1787617052::0::1::::Card<>Resource<><>0<>0<><>::
+customer_resource.gd::GDScript::8845708143094147092::1787943861::0::1::::Customer<>Resource<><>0<>0<><>::
+order_resource.gd::GDScript::8655549243371791157::1787941632::0::1::::Order<>Resource<><>0<>0<><>::
+::res://scripts/ui/::1787941269
+computer_screen.gd::GDScript::5434797248219869671::1787614101::0::1::::<>Control<><>0<>0<><>::
 hud.gd::GDScript::6190047019972714539::1787713342::0::1::::<>Control<><>0<>0<><>::
 search_bar.gd::GDScript::1025066855053495964::1787611438::0::1::::<>Control<><>0<>0<><>::
 ui_card.gd::GDScript::721210807010663975::1787529571::0::1::::<>Control<><>0<>0<><>::
