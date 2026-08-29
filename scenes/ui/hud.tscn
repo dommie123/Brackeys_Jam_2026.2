@@ -229,6 +229,15 @@ theme_override_font_sizes/font_size = 28
 text = "Deny
 "
 
+[node name="BackButton" type="Button" parent="SalePanel" unique_id=2025839892]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 81.0
+offset_bottom = 55.0
+theme_override_font_sizes/font_size = 28
+text = "Back"
+
 [node name="InventoryPanel" type="Panel" parent="." unique_id=1045826163]
 visible = false
 layout_mode = 1
@@ -237,6 +246,106 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="ShelvesLabel" type="Label" parent="InventoryPanel" unique_id=1490965661]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 16.0
+offset_bottom = 83.0
+grow_horizontal = 2
+scale = Vector2(1, 0.98658955)
+theme_override_font_sizes/font_size = 48
+text = "Store Shelves"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="InventoryPanel" unique_id=489266483]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 224.0
+offset_bottom = 224.0
+grow_horizontal = 2
+
+[node name="CardSlot" parent="InventoryPanel/HBoxContainer" unique_id=994581720 instance=ExtResource("3_bo48s")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CardSlot2" parent="InventoryPanel/HBoxContainer" unique_id=1023569835 instance=ExtResource("3_bo48s")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CardSlot3" parent="InventoryPanel/HBoxContainer" unique_id=1453613756 instance=ExtResource("3_bo48s")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CardSlot4" parent="InventoryPanel/HBoxContainer" unique_id=390701374 instance=ExtResource("3_bo48s")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CardSlot5" parent="InventoryPanel/HBoxContainer" unique_id=237630335 instance=ExtResource("3_bo48s")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CardSlot6" parent="InventoryPanel/HBoxContainer" unique_id=859873953 instance=ExtResource("3_bo48s")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CardSlot7" parent="InventoryPanel/HBoxContainer" unique_id=1336480422 instance=ExtResource("3_bo48s")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CardSlot8" parent="InventoryPanel/HBoxContainer" unique_id=1499093786 instance=ExtResource("3_bo48s")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CardSlot9" parent="InventoryPanel/HBoxContainer" unique_id=1441908682 instance=ExtResource("3_bo48s")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HouseLabel" type="Label" parent="InventoryPanel" unique_id=1217869797]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -33.5
+offset_bottom = 33.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1, 0.98658955)
+theme_override_font_sizes/font_size = 48
+text = "Back of House"
+horizontal_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="InventoryPanel" unique_id=1816687147]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -440.0
+grow_horizontal = 2
+grow_vertical = 0
+columns = 9
+
+[node name="BackButton" type="Button" parent="InventoryPanel" unique_id=1597749748]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 81.0
+offset_bottom = 55.0
+theme_override_font_sizes/font_size = 28
+text = "Back"
 
 [connection signal="pressed" from="SaleButton" to="." method="_on_sale_button_pressed"]
 [connection signal="pressed" from="InventoryButton" to="." method="_on_inventory_button_pressed"]

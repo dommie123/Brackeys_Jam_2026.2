@@ -1,10 +1,10 @@
 Button
-TextEdit
+GridContainer
 HBoxContainer
 Label
+TextEdit
 NinePatchRect
 VBoxContainer
-GridContainer
 Panel
 Timer
 PlayerBehaviorObject
