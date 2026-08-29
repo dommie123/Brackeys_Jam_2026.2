@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dsj2lvwg1unlt" path="res://scenes/ui/computer_screen.tscn" id="3_kfd0b"]
 [ext_resource type="PackedScene" uid="uid://bigpk3darsl8c" path="res://scenes/Customer.tscn" id="3_u5sy4"]
 [ext_resource type="PackedScene" uid="uid://cjxqrh4qoucms" path="res://scenes/ui/hud.tscn" id="5_lakwo"]
-[ext_resource type="Script" uid="uid://dd60ujp2qnkqe" path="res://scripts/player_behavior_object.gd" id="7_u5sy4"]
+[ext_resource type="Script" uid="uid://dd60ujp2qnkqe" path="res://scripts/behavior/player_behavior_object.gd" id="7_u5sy4"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lakwo"]
 load_path = "res://.godot/imported/—Pngtree—computer monitor picture free png_5444544.png-39549e545f4a28965dadf923d5305f78.ctex"

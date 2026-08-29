@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://c2bcgqfl5gh36"]
+
+[ext_resource type="Texture2D" uid="uid://cgt7lb2lvh2el" path="res://assets/art/game/card_back.png" id="1_y2car"]
+[ext_resource type="Script" uid="uid://kjmibsfqy4n0" path="res://scripts/ui/ui_card.gd" id="2_r5mde"]
+
+[node name="CardSlot" type="Control" unique_id=25918420]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="EmptyCardSlot" type="NinePatchRect" parent="." unique_id=1386179047]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -65.5
+offset_top = -91.0
+offset_right = 65.5
+offset_bottom = 91.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_y2car")
+
+[node name="CurrentCard" type="NinePatchRect" parent="." unique_id=560402826]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -65.5
+offset_top = -91.0
+offset_right = 65.5
+offset_bottom = 91.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CardCount" type="Label" parent="." unique_id=450974346]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = 108.0
+offset_right = 20.0
+offset_bottom = 147.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 28
+text = "0"
+horizontal_alignment = 1
+script = ExtResource("2_r5mde")

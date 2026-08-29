@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bigpk3darsl8c"]
 
 [ext_resource type="Texture2D" uid="uid://bumtdcb7hgxem" path="res://assets/placeholder/graphics/average-guy-26023717.webp" id="1_bov33"]
-[ext_resource type="Script" uid="uid://dw0wyafqdkn3" path="res://scripts/customer_behavior.gd" id="2_wpj86"]
+[ext_resource type="Script" uid="uid://dw0wyafqdkn3" path="res://scripts/behavior/customer_behavior.gd" id="2_wpj86"]
 
 [node name="Customer" type="Sprite2D" unique_id=1924783639]
 texture = ExtResource("1_bov33")

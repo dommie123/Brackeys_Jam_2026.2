@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cugrf1tk6t6x0" path="res://scripts/ui/hud.gd" id="1_0mwgc"]
 [ext_resource type="PackedScene" uid="uid://q0ucb463dfoe" path="res://scenes/ui/dialogue_box.tscn" id="2_hqnrr"]
+[ext_resource type="PackedScene" uid="uid://c2bcgqfl5gh36" path="res://scenes/ui/card_slot.tscn" id="3_bo48s"]
 
 [node name="HUD" type="Control" unique_id=43326899]
 layout_mode = 3
@@ -46,11 +47,22 @@ text = "Inventory
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
+offset_top = 45.0
+offset_bottom = 84.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 28
+text = "Rep: <count>"
+horizontal_alignment = 2
+
+[node name="MoneyLabel" type="Label" parent="." unique_id=530177148]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
 offset_top = 8.0
 offset_bottom = 47.0
 grow_horizontal = 2
 theme_override_font_sizes/font_size = 28
-text = "Rep: <count>"
+text = "Money: $<count>"
 horizontal_alignment = 2
 
 [node name="DialogueBox" parent="." unique_id=796987088 instance=ExtResource("2_hqnrr")]
@@ -59,6 +71,172 @@ offset_left = 64.0
 offset_top = 64.0
 offset_right = -864.0
 offset_bottom = -736.0
+
+[node name="SalePanel" type="Panel" parent="." unique_id=490815759]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ShelvesLabel" type="Label" parent="SalePanel" unique_id=219127924]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -960.0
+offset_bottom = 112.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 48
+text = "Store Shelves"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CustimerLabel" type="Label" parent="SalePanel" unique_id=257050162]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_right = 960.0
+offset_bottom = 112.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 48
+text = "Customer Inventory"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="SalePanel" unique_id=33955692]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.14814815
+anchor_right = 0.5
+anchor_bottom = 0.94814813
+grow_vertical = 2
+columns = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="CardSlot" parent="SalePanel/GridContainer" unique_id=25918420 instance=ExtResource("3_bo48s")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CardSlot2" parent="SalePanel/GridContainer" unique_id=1855714267 instance=ExtResource("3_bo48s")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CardSlot3" parent="SalePanel/GridContainer" unique_id=2047340117 instance=ExtResource("3_bo48s")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CardSlot4" parent="SalePanel/GridContainer" unique_id=840550838 instance=ExtResource("3_bo48s")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CardSlot5" parent="SalePanel/GridContainer" unique_id=216080750 instance=ExtResource("3_bo48s")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CardSlot6" parent="SalePanel/GridContainer" unique_id=251675101 instance=ExtResource("3_bo48s")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CardSlot7" parent="SalePanel/GridContainer" unique_id=1954560937 instance=ExtResource("3_bo48s")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CardSlot8" parent="SalePanel/GridContainer" unique_id=1657232363 instance=ExtResource("3_bo48s")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CardSlot9" parent="SalePanel/GridContainer" unique_id=1560247161 instance=ExtResource("3_bo48s")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SalePanel" unique_id=1602107453]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -896.0
+offset_top = 8.0
+offset_right = -64.0
+offset_bottom = -56.0
+grow_horizontal = 0
+grow_vertical = 2
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="SalePanel/VBoxContainer" unique_id=816155189]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="CardSlot10" parent="SalePanel/VBoxContainer/HBoxContainer" unique_id=1150419868 instance=ExtResource("3_bo48s")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CardSlot11" parent="SalePanel/VBoxContainer/HBoxContainer" unique_id=855977202 instance=ExtResource("3_bo48s")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CardSlot12" parent="SalePanel/VBoxContainer/HBoxContainer" unique_id=489006675 instance=ExtResource("3_bo48s")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="MarketValueLabel" type="Label" parent="SalePanel/VBoxContainer" unique_id=245828601]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Market Value: $<val>"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="SalePanel/VBoxContainer" unique_id=1149712012]
+layout_mode = 2
+
+[node name="MarketValueLabel2" type="Label" parent="SalePanel/VBoxContainer/HBoxContainer2" unique_id=2090005879]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Sell Price:       "
+
+[node name="TextEdit" type="TextEdit" parent="SalePanel/VBoxContainer/HBoxContainer2" unique_id=1964436701]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="SalePanel/VBoxContainer" unique_id=1637988125]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="SalePanel/VBoxContainer/HBoxContainer3" unique_id=1225163856]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 28
+text = "Offer
+"
+
+[node name="Button2" type="Button" parent="SalePanel/VBoxContainer/HBoxContainer3" unique_id=1661983430]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 28
+text = "Deny
+"
+
+[node name="InventoryPanel" type="Panel" parent="." unique_id=1045826163]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [connection signal="pressed" from="SaleButton" to="." method="_on_sale_button_pressed"]
 [connection signal="pressed" from="InventoryButton" to="." method="_on_inventory_button_pressed"]
